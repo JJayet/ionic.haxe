@@ -6,8 +6,8 @@ typedef LoadingOptions = {
 	?scope : Dynamic,
 	?noBackdrop : Bool,
 	?hideOnStateChange : Bool,
-	?delay : js.Number,
-	?duration : js.Number
+	?delay : Int,
+	?duration : Int
 }
 
 @:injectionName("$ionicLoading")
