@@ -1,22 +1,21 @@
-package ionic.modal;
+package ionic.popover;
 
-@:injectionName("$ionicModal")
-extern class IonicModal {
-	public function fromTemplate(templateString : String, options : Dynamic) : Dynamic;
+@:injectionName("$ionicPopover")
+extern class IonicPopover {
+	public function fromTemplate(templateString : String, options : Dynamic) : IonicPopoverController;
 	public function fromTemplateUrl(templateUrl : String, options : Dynamic) : Dynamic;
 }
 
-typedef IonicModalControllerOptions = {
+typedef IonicPopoverControllerOptions = {
 	?scope : Dynamic,
-	?animation : String,
 	?focusFirstInput : Bool,
 	?backdropClickToClose : Bool,
 	?hardwareBackButtonClose : Bool
 }
 
-@:native("ionicModal")
-extern class IonicModalController {
-	public static function initialize(options : IonicModalControllerOptions) : Void;
+@:native("ionicPopover")
+extern class IonicPopoverController {
+	public static function initialize(options : IonicPopoverControllerOptions) : Void;
 	public static function show($event : Dynamic) : Dynamic;
 	public static function hide() : Dynamic;
 	public static function remove() : Dynamic;

@@ -1,17 +1,17 @@
 package ionic;
 
 
-// @:injectionName("$ionicPlatform")
-// extern class IonicPlatform {
-// 	public function onHardwareBackButton(callback: Dynamic) : Void;
-// 	public function offHardwareBackButton(callback: Dynamic) : Void;
-// 	public function registerBackButtonAction(callback : Dynamic, priority : Int, ?actionId : String): Void -> Void;
-// 	public function on(type : String, callback : Dynamic)
-// 	public function ready(?callback : Void -> Void) : Dynamic;
-// }
+@:injectionName("$ionicPlatform")
+extern class IonicPlatform {
+	public function onHardwareBackButton(callback: Dynamic) : Void;
+	public function offHardwareBackButton(callback: Dynamic) : Void;
+	public function registerBackButtonAction(callback : Dynamic, priority : Int, ?actionId : String): Void -> Void;
+	public function on(type : String, callback : Dynamic) : Void -> Void;
+	public function ready(?callback : Void -> Void) : Dynamic;
+}
 
 @:native("ionic.Platform")
-extern class IonicPlatform {
+extern class IonicPlatformController {
 	public static function ready(callback : Dynamic) : Void;
 	public static function setGrade(grade : String) : Void;
 	public static function device() : Dynamic;
