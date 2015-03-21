@@ -9,5 +9,5 @@ typedef ScrollPosition = {
 extern class IonicTabsDelegate {
 	public function select(index : Int) : Void;
 	public function selectedIndex() : Int;
-	public function $getByHandle(handle : String) : IonicSideMenuDelegate
+	@:native("$getByHandle") public function getByHandle(handle : String) : IonicSideMenuDelegate;
 }

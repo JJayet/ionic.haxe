@@ -15,5 +15,5 @@ extern class IonicSideMenuDelegate {
 	public function isOpenRight() : Bool;
 	public function canDragContent(?canDrag : Bool) : Bool;
 	public function edgeDragThreshold(value : Dynamic) : Bool;
-	public function $getByHandle(handle : String) : IonicSideMenuDelegate
+	@:native("$getByHandle") public function getByHandle(handle : String) : IonicSideMenuDelegate;
 }

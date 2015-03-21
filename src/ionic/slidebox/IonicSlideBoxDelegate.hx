@@ -16,5 +16,5 @@ extern class IonicSlideBoxDelegate {
 	public function start() : Void;
 	public function currentIndex() : Int;
 	public function slidesCount() : Int;
-	public function $getByHandle(handle : String) : IonicSideMenuDelegate
+	@:native("$getByHandle") public function getByHandle(handle : String) : IonicSideMenuDelegate;
 }

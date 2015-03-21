@@ -32,7 +32,6 @@ typedef IonicPopupConfirmOptions = { > IonicPopupAlertOptions
 typedef IonicPopupPromptOptions = { > IonicPopupConfirmOptions
 	?inputType: String,
 	?inputPlaceholder: String
-
 }
 
 @:injectionName("$ionicPopup")

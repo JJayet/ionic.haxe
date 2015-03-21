@@ -6,5 +6,5 @@ extern class IonicListDelegate {
 	public function showDelete(showDelete : Bool) : Bool;
 	public function canSwipeItems(canSwipeItems : Bool) : Bool;
 	public function closeOptionButtons() : Void;
-	public function $getByHandle(handle : String) : Dynamic;
+	@:native("$getByHandle") public function getByHandle(handle : String) : Dynamic;
 }
