@@ -1,5 +1,7 @@
 package ionic.popup;
 
+import angular.*;
+
 typedef IonicPopupButton = {
 	text: String,
     type: String,
@@ -15,7 +17,7 @@ typedef IonicPopupBasicOptions = {
 }
 
 typedef IonicPopupShowOptions = { > IonicPopupBasicOptions
-  ?scope: Dynamic,
+  ?scope: angular.service.Scope,
   ?buttons: Array<IonicPopupButton>
 }
 
@@ -36,8 +38,8 @@ typedef IonicPopupPromptOptions = { > IonicPopupConfirmOptions
 
 @:injectionName("$ionicPopup")
 extern class IonicPopup {
-	public function show() : Dynamic;
-	public function alert(options : IonicPopupAlertOptions) : Dynamic;
-	public function confirm(options : IonicPopupConfirmOptions) : Dynamic;
-	public function prompt(options : IonicPopupPromptOptions) : Dynamic;
+	public function show() : Promise<Dynamic>;
+	public function alert(options : IonicPopupAlertOptions) : Promise<Dynamic>;
+	public function confirm(options : IonicPopupConfirmOptions) : Promise<Dynamic>;
+	public function prompt(options : IonicPopupPromptOptions) : Promise<Dynamic>;
 }

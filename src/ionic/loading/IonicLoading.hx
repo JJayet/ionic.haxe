@@ -1,9 +1,11 @@
 package ionic.loading;
 
+import angular.service.*;
+
 typedef LoadingOptions = {
 	?template : String,
 	?templateUrl : String,
-	?scope : Dynamic,
+	?scope : Scope,
 	?noBackdrop : Bool,
 	?hideOnStateChange : Bool,
 	?delay : Int,

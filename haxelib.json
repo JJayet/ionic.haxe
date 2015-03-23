@@ -1,0 +1,14 @@
+{
+	"name": "ionic.haxe",
+	"url": "https://github.com/jjayet/ionic.haxe",
+	"license": "MIT",
+	"classPath": "src",
+	"tags": ["ionic", "ionicframework", "externs"],
+	"description": "Toolset for using the ionic framework in haxe applications",
+	"releasenote": "initial release",
+	"version": "0.1.0",
+	"contributors": ["jjayet"],
+	"dependencies": {
+		"angular.haxe" : "0.0.6"
+	}
+}
