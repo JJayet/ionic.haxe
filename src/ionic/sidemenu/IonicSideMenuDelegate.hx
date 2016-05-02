@@ -14,6 +14,6 @@ extern class IonicSideMenuDelegate {
 	public function isOpenLeft() : Bool;
 	public function isOpenRight() : Bool;
 	public function canDragContent(?canDrag : Bool) : Bool;
-	public function edgeDragThreshold(value : haxe.EitherType<Boolean, Int>) : Bool;
+	public function edgeDragThreshold(value : haxe.extern.EitherType<Bool, Int>) : Bool;
 	@:native("$getByHandle") public function getByHandle(handle : String) : IonicSideMenuDelegate;
 }
