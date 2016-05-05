@@ -18,9 +18,9 @@ typedef IonicModalControllerOptions = {
 
 @:native("ionicModal")
 extern class IonicModalController {
-	public static function initialize(options : IonicModalControllerOptions) : Void;
-	public static function show(event : Dynamic) : Promise<Dynamic>;
-	public static function hide() : Promise<Dynamic>;
-	public static function remove() : Promise<Dynamic>;
-	public static function isShown() : Bool;
+	public function initialize(options : IonicModalControllerOptions) : Void;
+	public function show() : Promise<Dynamic>;
+	public function hide() : Promise<Dynamic>;
+	public function remove() : Promise<Dynamic>;
+	public function isShown() : Bool;
 }
