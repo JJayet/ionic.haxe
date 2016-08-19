@@ -16,22 +16,22 @@ typedef IonicPopupBasicOptions = {
 	?templateUrl: String,
 }
 
-typedef IonicPopupShowOptions = { > IonicPopupBasicOptions
+typedef IonicPopupShowOptions = { > IonicPopupBasicOptions,
   ?scope: angular.service.Scope,
   ?buttons: Array<IonicPopupButton>
 }
 
-typedef IonicPopupAlertOptions = { > IonicPopupBasicOptions
+typedef IonicPopupAlertOptions = { > IonicPopupBasicOptions,
 	?okText: String,
 	?okType: String,
 }
 
-typedef IonicPopupConfirmOptions = { > IonicPopupAlertOptions
+typedef IonicPopupConfirmOptions = { > IonicPopupAlertOptions,
 	?cancelText: String,
 	?cancelType: String
 }
 
-typedef IonicPopupPromptOptions = { > IonicPopupConfirmOptions
+typedef IonicPopupPromptOptions = { > IonicPopupConfirmOptions,
 	?inputType: String,
 	?inputPlaceholder: String
 }
